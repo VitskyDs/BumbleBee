@@ -1,0 +1,635 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font: 16px/150% Asap, sans-serif;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+h1 {
+    font: 3.5rem/150% Asap, sans-serif;
+    font-weight: 700;
+    color: #FFDF00;
+}
+
+h2 {
+    font: 2.8rem/150% Asap, sans-serif;
+    font-weight: 700;
+    color: #FFDF00;
+}
+
+h4 {
+    font: 1.8rem/150% Asap, sans-serif;
+    font-weight: 700;
+}
+
+h5 {
+    font: 1rem/1rem Vollkorn, serif;
+}
+
+#bg {
+    background-image: url(../images/bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #FFDF00;
+    z-index: -1;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.wave-1 {
+    background: url(../images/wave-1.svg) top center/100% no-repeat;
+    margin-top: -1px;
+    height: 150px;
+}
+
+.wave-2 {
+    background: url(../images/wave-2.svg) bottom center/100% no-repeat;
+    margin-bottom: -1px;
+    height: 150px;
+}
+
+.wave-4 {
+    background: url(../images/wave-4.svg) top center/100% no-repeat;
+    margin-top: -1px;
+}
+
+.wave-1-2 {
+    background: url(../images/wave-1.svg) top center/100% no-repeat, url(../images/wave-2.svg) bottom center/100% no-repeat;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+.wave-1-3 {
+    background: url(../images/wave-1.svg) top center/100% no-repeat, url(../images/wave-3.svg) bottom center/100% no-repeat;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+
+/*Navbar*/
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.menu {
+    position: fixed;
+    right: 25px;
+    top: 20px;
+    z-index: 999;
+    height: 25px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.hamburger-line {
+    height: 5px;
+    width: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25)
+}
+
+.menu-container {
+    padding: 0 25px;
+    background-color: white;
+    color: black;
+    height: 100vh;
+    font-size: 2.5rem;
+    position: fixed;
+    right: -100%;
+    z-index: 3;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25)
+}
+
+.menu-container ul {
+    text-align: center;
+    padding-left: 0;
+    list-style: none;
+}
+
+.menu-container a {
+    color: black;
+}
+
+.menu-container a:hover {
+    text-decoration: none;
+    color: #FFDF00;
+}
+
+.menu-items {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    margin: auto;
+}
+
+.menu-items ul li {
+    padding: 30px 0;
+    border-bottom: 2px solid black;
+}
+
+.menu-items ul li:last-child {
+    border-bottom: 0;
+}
+
+.menu-items ul ul li {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0;
+    border: 0;
+}
+
+
+/*fold*/
+
+.fold {
+    padding-top: 80px;
+    height: 85vh;
+    min-height: 85vh;
+}
+
+.logo-icon {
+    width: 25vw;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow( 0 0 2px rgba(0, 0, 0, 0.25));
+}
+
+.logo {
+    color: white;
+    text-align: center;
+}
+
+.logo h1 {
+    font: 5rem/70% Asap, sans-serif;
+    color: white;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.logo h4 {
+    font-size: 2.5rem;
+}
+
+#QueenB {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 85%;
+    width: 100px;
+    cursor: pointer;
+}
+
+#QueenBBG {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 85%;
+    width: 100px;
+    filter: drop-shadow( 0 0 2px rgba(0, 0, 0, 0.25));
+}
+
+
+/*features*/
+
+.feature-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+}
+
+.feature-img {
+    text-align: center;
+    height: 300px;
+}
+
+
+/*feature 1*/
+
+.feature-1 {
+    padding: 120px 0 60px 0;
+}
+
+
+/*iphones*/
+
+.iphones-container {
+    min-height: 600px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.iphones-container h4 {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.iphone-div {
+    position: absolute;
+    width: 33%;
+}
+
+.iphone-div img {
+    width: 100%;
+    filter: drop-shadow( 0 0 4px #ddd);
+}
+
+.iphone-1 {
+    top: 0;
+    left: 0;
+    width: 38%;
+}
+
+.iphone-2 {
+    top: 22.5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 38%;
+}
+
+.iphone-3 {
+    top: 45%;
+    right: 0;
+    width: 38%;
+}
+
+
+/*feature 2*/
+
+.feature-2 {
+    padding: 30px 0;
+}
+
+
+/*iphone*/
+
+.iphone {
+    padding: 170px 0;
+    color: white;
+}
+
+.iphone img {
+    padding: 5%;
+    width: 100%;
+    filter: drop-shadow( 0 0 4px #ddd);
+}
+
+.iphone h4 {
+    margin-top: 50px;
+}
+
+
+/*quotes*/
+
+.quotes-container {
+    padding: 140px 0 100px 0;
+}
+
+.quotes-container img {
+    width: 100%;
+    border: 6px solid #FFDF00;
+}
+
+.quote-text::before {
+    content: "\201c";
+    font-size: 10rem;
+    font-family: 'Vollkorn', serif;
+    font-weight: 500;
+    color: #FFDF00;
+    position: absolute;
+    left: -5%;
+}
+
+.quote-text {
+    position: relative;
+    padding-top: 55px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    height: 165px;
+}
+
+.quote-text::after {
+    content: "\201d";
+    font-size: 10rem;
+    font-family: 'Vollkorn', serif;
+    font-weight: 500;
+    color: #FFDF00;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.quote {
+    font: 2.2rem/2.6rem Vollkorn, serif;
+    font-style: italic;
+    display: block;
+}
+
+.quote-text h5 {
+    font: 1.5rem/1.5rem Vollkorn, serif;
+    display: block;
+}
+
+.quote-1 .quote-text {
+    padding-left: 10px;
+}
+
+.quote-2 {
+    margin-top: 75px;
+}
+
+
+/*cta*/
+
+.cta {
+    padding: 300px 0 0 0;
+    text-align: center;
+}
+
+.cta button {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 60px;
+    margin: 0 auto;
+    background: none;
+    border: solid 4px white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: white;
+    font: 2.2rem/100% Asap, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.6s ease-in-out;
+}
+
+.cta a:hover {
+    text-decoration: none;
+}
+
+.cta button::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.cta button:hover::after {
+    opacity: 1;
+}
+
+.google-play {
+    display: block;
+    margin: 20px auto;
+    width: 140px;
+}
+
+
+/*footer*/
+
+footer {
+    border-top: 4px solid white;
+    color: white;
+    margin-top: 150px;
+    background-color: #FFDF00;
+}
+
+footer .container {
+    padding-top: 30px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+    display: block;
+}
+
+footer li {
+    color: white;
+    display: inline;
+    text-align: left;
+    margin-right: 20px;
+}
+
+footer li:hover {
+    color: black;
+}
+
+.who-are-we {
+    font-size: 1.8rem;
+    text-align: right;
+}
+
+.social {
+    margin: 0;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.copyright {
+    margin-top: 80px;
+    text-align: center;
+}
+
+
+/*    tablet   */
+
+@media (max-width: 992px) {
+    .menu-container {}
+    .sm-hidden {
+        display: none;
+    }
+    .navbar-invisible {
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+    }
+    /*    fold    */
+    .fold {
+        padding-top: 30px;
+    }
+    #QueenB {
+        width: 80px;
+    }
+    #QueenBBG {
+        width: 80px;
+    }
+    /*    feature    */
+    .feature-text {
+        height: 250px;
+    }
+    .feature-img {
+        height: 250px;
+    }
+    /*    iphones     */
+    .iphones-container {
+        height: 350px;
+        min-height: 350px;
+    }
+    .iphones-container h4 {
+        margin-top: 10px;
+        margin-left: 0;
+        padding-right: 30px;
+    }
+    .iphone-1 {
+        top: 0;
+    }
+    .iphone-2 {
+        top: 25%;
+    }
+    .iphone-3 {
+        top: 50%;
+    }
+    /*    iphone     */
+    .iphone {
+        padding: 30px 0 0 0;
+    }
+    .iphone h4 {
+        text-align: center;
+        font-size: 2.2rem;
+        margin: 100px 0 0 0;
+    }
+    .iphone-friends {
+        margin-bottom: -50px;
+    }
+    /*    quotes    */
+    .quotes-container {
+        padding: 140px 0 70px 0;
+    }
+    /*    cta    */
+    .cta {
+        padding: 200px 0 100px 0;
+        text-align: center;
+    }
+    /*    footer    */
+    footer {
+        padding: 30px;
+    }
+    .copyright {
+        margin-top: 40px;
+    }
+}
+
+
+/*    mobile    */
+
+@media (max-width: 768px) {
+    /*    navbar    */
+    .hamburger-line {
+        background-color: white;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.5)
+    }
+    /*    fold    */
+    .logo-icon {
+        width: 200px;
+    }
+    .fold {
+        padding-top: 30px;
+        height: 85vh;
+        min-height: 85vh;
+    }
+    #QueenB {
+        width: 80px;
+    }
+    #QueenBBG {
+        width: 80px;
+    }
+    /*    feature    */
+    .feature-text {
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 0 15px;
+    }
+    .feature-img {
+        display: block;
+        margin: 20px auto 0 auto;
+        margin
+    }
+    /*    iphones    */
+    .wave-1,
+    .wave-2 {
+        height: 50px;
+    }
+    .iphones-container {
+        height: auto;
+    }
+    .iphones-container h4 {
+        margin-top: 10px;
+        margin-left: 0;
+        padding-right: 30px;
+    }
+    .iphone-div {
+        position: relative;
+        width: 100%;
+        padding: 20px 30px;
+    }
+    /*    iphone    */
+    .iphone {
+        padding: 10px 0 0 0;
+    }
+    .iphone-friends {
+        margin-bottom: -40px;
+    }
+    /*    quotes    */
+    .quote {
+        display: inline;
+    }
+    /*footer*/
+    .who-are-we {
+        text-align: center;
+    }
+    .social {
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+    /*    navbar    */
+    .navbar-invisible {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+}
