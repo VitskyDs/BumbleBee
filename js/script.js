@@ -6,13 +6,10 @@ var queenB = $('#QueenB'),
     line2 = $("#line-2"),
     line3 = $("#line-3"),
     menuContainer = $(".menu-container"),
-    tmln = new TimelineLite();
+    tmln = new TimelineLite(),
+    txtTmln = new TimelineLite();
 
 CustomEase.create("queenB", "M0,0 C0.502,0 0.479,0.611 0.588,0.816 0.686,1 0.818,1 1,1");
-
-TweenMax.set(queenB, {
-    svgOrigin:"50, 50"
-});
 
 var queenBAnimation = function () {
 
@@ -23,7 +20,7 @@ var queenBAnimation = function () {
         .to(queenB,1,{ease: Back.easeOut.config(1.2), css:{top:"85%"}}, "-=1");
 }
 
-queenB.click(function(){queenBAnimation();});
+queenB.click(function(){queenBAnimation()});
 
 //menu button animation
 
@@ -81,8 +78,7 @@ $win.on("scroll", function () {
 
 //bumbleType animation
 
-
-
+txtTmln.to(".text-animation", 1, {x: 100});
 
     /*bezier: {
     type: "thru"
