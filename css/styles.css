@@ -179,11 +179,23 @@ h5 {
     text-align: center;
 }
 
-.logo h1 {
+.logo h1 span {
     font: 5rem/70% Asap, sans-serif;
     color: white;
     font-weight: 700;
-    margin-top: 0;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.logo h1 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .logo h4 {

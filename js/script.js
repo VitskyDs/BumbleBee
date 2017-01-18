@@ -79,6 +79,10 @@ $win.on("scroll", function () {
    winH = $(this).height(); // you'll need the new height value
 });
 
+//bumbleType animation
+
+
+
 
     /*bezier: {
     type: "thru"
