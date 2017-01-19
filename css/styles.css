@@ -179,15 +179,16 @@ h5 {
     text-align: center;
 }
 
+.logo h1 {}
+
 .logo h1 span {
+    position: relative;
     font: 5rem/70% Asap, sans-serif;
     color: white;
     font-weight: 700;
-    margin-bottom: 20px;
-    position: relative;
 }
 
-.logo h1 span::after {
+.logo h1 span::before {
     content: "";
     position: absolute;
     left: 0;

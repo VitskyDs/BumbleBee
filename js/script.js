@@ -2,7 +2,8 @@
 
 var queenB = $('#QueenB'),
     i = 0,
-    menuTmln = new TimelineLite(),line1 = $("#line-1"),
+    menuTmln = new TimelineLite(),
+    line1 = $("#line-1"),
     line2 = $("#line-2"),
     line3 = $("#line-3"),
     menuContainer = $(".menu-container"),
@@ -56,6 +57,22 @@ $(".menu").click(function(){
     }    
 });
 
+//bumbleType animation
+
+txtTmln .set(".text-animation", {autoAlpha: 0}).set("#B1", {color: "#000"}).set("#e0", {css:{display:"none"}})
+        .to("#B0", 0, {autoAlpha:1, delay:0.3})
+        .to("#u", 0, {autoAlpha:1, delay:0.3})
+        .to("#m", 0, {autoAlpha:1, delay:0.3})
+        .to("#b", 0, {autoAlpha:1, delay:0.3})
+        .to("#l", 0, {autoAlpha:1, delay:0.2})
+        .to("#B1", 0, {autoAlpha:1, delay:0.2})
+        .to("#B1", 0, {css:{display:"none"}, delay:0.4})
+        .to("#e0", 0, {css:{display:"inline"}})
+        .to("#e0", 0, {autoAlpha:1, delay:0.6})
+        .to("#B2", 0, {autoAlpha:1, color:"#fff", delay:0.3})
+        .to("#e1", 0, {autoAlpha:1, delay:0.2})
+        .to("#e2", 0, {autoAlpha:1, delay:0.2});
+
 $(window).click(function() {
 menuAnimationReverse();
 });
@@ -76,9 +93,7 @@ $win.on("scroll", function () {
    winH = $(this).height(); // you'll need the new height value
 });
 
-//bumbleType animation
 
-txtTmln.to(".text-animation", 1, {x: 100});
 
     /*bezier: {
     type: "thru"
