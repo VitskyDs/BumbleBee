@@ -8,7 +8,7 @@ var queenB = $('#QueenB'),
     line3 = $("#line-3"),
     menuContainer = $(".menu-container"),
     tmln = new TimelineMax(),
-    txtTmln = new TimelineMax({repeat: -1, repeatDelay:1});
+    txtTmln = new TimelineMax({repeat: -1, repeatDelay:3});
 
 CustomEase.create("queenB", "M0,0 C0.502,0 0.479,0.611 0.588,0.816 0.686,1 0.818,1 1,1");
 
@@ -57,6 +57,12 @@ $(".menu").click(function(){
     }    
 });
 
+
+$(window).click(function() {
+    if(i == 1){
+menuAnimationReverse();
+}});
+
 //bumbleType animation
 
 txtTmln .set(".text-animation", {autoAlpha: 0}).set("#B1", {color: "#f64870"}).set("#e0", {css:{display:"none"}})
@@ -73,11 +79,9 @@ txtTmln .set(".text-animation", {autoAlpha: 0}).set("#B1", {color: "#f64870"}).s
         .to("#e1", 0, {autoAlpha:1, delay:0.3})
         .to("#e2", 0, {autoAlpha:1, delay:0.3})
         .to("#bumble-type", 0.3, {ease: Sine.easeIn, className:"+=glow"})
+        .to("#bumble-type", 0.6, {ease: Sine.easeIn, className:"-=glow"})
 ;
 
-$(window).click(function() {
-menuAnimationReverse();
-});
 
 //scroll menu appear on mobile
 
