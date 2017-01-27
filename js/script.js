@@ -18,7 +18,7 @@ var queenBAnimation = function () {
         ease: "queenB", css:{top:"-100%"}})
         .set(queenB, {opacity: 0, css:{top:"120%"}})
         .to(queenB,1,{opacity:1})
-        .to(queenB,1,{ease: Back.easeOut.config(1.2), css:{top:"85%"}}, "-=1");
+        .to(queenB,1,{ease: Back.easeOut.config(1.2), css:{top:"100%"}}, "-=1");
 }
 
 queenB.click(function(){queenBAnimation()});
@@ -98,6 +98,9 @@ $win.on("scroll", function () {
 }).on("resize", function(){ // If the user resizes the window
    winH = $(this).height(); // you'll need the new height value
 });
+
+
+//popup
 
 
 
