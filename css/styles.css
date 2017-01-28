@@ -109,14 +109,26 @@ h5 {
     margin-top: 0;
 }
 
-textarea {
+#contact input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4);
+    margin-bottom: 15px;
+    padding: 5px 15px;
+}
+
+#contact textarea {
     width: 100%;
     height: 50%;
-    border: 0;
+    border: none;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
-    padding: 15px;
+    padding: 5px 15px;
     overflow: scroll;
+    resize: none;
 }
+
 
 /*Navbar*/
 
