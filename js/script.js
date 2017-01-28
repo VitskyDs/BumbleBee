@@ -102,7 +102,17 @@ $win.on("scroll", function () {
 
 //popup
 
+$(".email-message").click(function () {
+    if (i == 1) {
+        menuAnimationReverse();
+    }
+    $(".popup-display").show();
 
+});
+
+$("#popup-cancel").click(function () {
+            $(".popup-display").hide();
+});
 
     /*bezier: {
     type: "thru"

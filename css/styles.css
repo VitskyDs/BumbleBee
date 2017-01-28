@@ -82,8 +82,12 @@ h5 {
 
 /*popup*/
 
+.popup-display {
+    display: none;
+}
+
 .popup-container {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -91,13 +95,18 @@ h5 {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
+    overflow: hidden;
 }
 
 .popup {
     width: 30%;
-    height: 40%;
+    height: 300px;
     border-radius: 10px;
     background-color: white;
+}
+
+.email-message {
+    cursor: pointer;
 }
 
 #contact {
@@ -105,11 +114,12 @@ h5 {
 }
 
 #contact h4 {
+    font-size: 2.2rem;
     text-align: center;
     margin-top: 0;
 }
 
-#contact input {
+#contact .text-input {
     width: 100%;
     border: none;
     border-radius: 5px;
@@ -120,13 +130,63 @@ h5 {
 
 #contact textarea {
     width: 100%;
-    height: 50%;
+    height: 125px;
+    box-sizing: border-box;
     border: none;
     box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     padding: 5px 15px;
     overflow: scroll;
     resize: none;
+}
+
+#contact button {
+    float: right;
+    padding: 5px 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    font-weight: 500;
+}
+
+#contact button:focus {
+    outline-width: 0;
+}
+
+#contact button:hover {
+    background-color: #bbb;
+    outline-width: 0;
+}
+
+#contact .submit-btn {
+    float: right;
+    padding: 5px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFDF00;
+    font-weight: 500;
+}
+
+#contact .text-input:focus {
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.8);
+    outline-width: 0;
+}
+
+#contact textarea:focus {
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.8);
+    outline-width: 0;
+}
+
+#contact .submit-btn:focus {
+    outline-width: 0;
+}
+
+#contact .submit-btn:hover {
+    background-color: #eece00;
+    outline-width: 0;
 }
 
 

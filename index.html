@@ -21,15 +21,23 @@
     <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700,700i" rel="stylesheet"> </head>
 
 <body id="bg">
-    <div class="popup-container">
-        <div class="popup">
-            <form id="contact" action="#" method="post">
-                <h4>some sort of header</h4>
-                <div><input type="text" placeholder="your email"></div>
-                <div>
-                    <textarea name="textarea" placeholder="your message" id="textarea"></textarea>
-                </div>
-            </form>
+    <!--   popup   -->
+    <div class="popup-display">
+        <div class="popup-container">
+            <div class="popup">
+                <form id="contact" action="#">
+                    <h4>Tell us what you think</h4>
+                    <div>
+                        <input class="text-input" type="text" placeholder="your email"> </div>
+                    <div>
+                        <textarea name="textarea" placeholder="your message" id="textarea"></textarea>
+                    </div>
+                    <div>
+                        <input class="submit-btn" type="submit" value="send">
+                        <button id="popup-cancel">cancel</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <!--   Navbar   -->
@@ -48,9 +56,7 @@
                                 <a href="">
                                     <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
                                 </a>
-                                <a href="">
-                                    <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
-                                </a>
+                                <li class="email-message"><i class="fa fa-envelope" aria-hidden="true"></i></li>
                             </ul>
                         </li>
                     </ul>
@@ -191,9 +197,7 @@
                         <a href="">
                             <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
                         </a>
-                        <a href="">
-                            <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
-                        </a>
+                        <li class="email-message"><i class="fa fa-envelope" aria-hidden="true"></i> </li>
                     </ul>
                 </div>
             </div>
