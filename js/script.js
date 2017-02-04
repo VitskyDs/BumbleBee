@@ -111,7 +111,12 @@ $(".email-message").click(function () {
 });
 
 $("#popup-cancel").click(function () {
-            $(".popup-display").hide();
+    $(".popup-display").hide();
+});
+
+
+$("#submit-btn").click(function () {
+    $(".popup-display").hide();
 });
 
     /*bezier: {

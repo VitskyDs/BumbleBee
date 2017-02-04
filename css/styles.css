@@ -140,27 +140,7 @@ h5 {
     resize: none;
 }
 
-#contact button {
-    float: right;
-    padding: 5px 15px;
-    margin-top: 10px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ddd;
-    font-weight: 500;
-}
-
-#contact button:focus {
-    outline-width: 0;
-}
-
-#contact button:hover {
-    background-color: #bbb;
-    outline-width: 0;
-}
-
-#contact .submit-btn {
+#submit-btn {
     float: right;
     padding: 5px 15px;
     margin-top: 10px;
@@ -180,12 +160,32 @@ h5 {
     outline-width: 0;
 }
 
-#contact .submit-btn:focus {
+#submit-btn:focus {
     outline-width: 0;
 }
 
-#contact .submit-btn:hover {
+#submit-btn:hover {
     background-color: #eece00;
+    outline-width: 0;
+}
+
+#popup-cancel {
+    float: right;
+    padding: 5px 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    font-weight: 500;
+}
+
+#popup-cancel:focus {
+    outline-width: 0;
+}
+
+#popup-cancel:hover {
+    background-color: #bbb;
     outline-width: 0;
 }
 
