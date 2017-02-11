@@ -140,16 +140,6 @@ h5 {
     resize: none;
 }
 
-#submit-btn {
-    float: right;
-    padding: 5px 15px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #FFDF00;
-    font-weight: 500;
-}
-
 #contact .text-input:focus {
     box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.8);
     outline-width: 0;
@@ -158,6 +148,16 @@ h5 {
 #contact textarea:focus {
     box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.8);
     outline-width: 0;
+}
+
+#submit-btn {
+    float: right;
+    padding: 5px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFDF00;
+    font-weight: 500;
 }
 
 #submit-btn:focus {
